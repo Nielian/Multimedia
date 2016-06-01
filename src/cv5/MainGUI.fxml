@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="332.0" prefWidth="411.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="cv5.Process">
+  <!-- TODO Add Nodes -->
+  <children>
+    <Button id="redButton" layoutX="54.0" layoutY="14.0" mnemonicParsing="false" onAction="#rButtonPressed" prefWidth="70.0" text="RED" />
+    <Button id="greenButton" layoutX="133.0" layoutY="14.0" mnemonicParsing="false" onAction="#gButtonPressed" prefWidth="70.0" text="GREEN" />
+    <Button id="blueButton" layoutX="215.0" layoutY="14.0" mnemonicParsing="false" onAction="#bButtonPressed" prefWidth="70.0" text="BLUE" />
+    <Button id="yButton" layoutX="54.0" layoutY="47.0" mnemonicParsing="false" onAction="#yButtonPressed" prefWidth="70.0" text="Y" />
+    <Button id="cbButton" layoutX="133.0" layoutY="47.0" mnemonicParsing="false" onAction="#cbButtonPressed" prefWidth="70.0" text="Cb" />
+    <Button id="crButton" layoutX="215.0" layoutY="47.0" mnemonicParsing="false" onAction="#crButtonPressed" prefWidth="70.0" text="Cr" />
+    <Label layoutX="124.0" layoutY="78.0" prefWidth="91.0" text="DOWNSAMPLE" textAlignment="CENTER" wrapText="false" />
+    <Button id="dS422Button" layoutX="171.0" layoutY="101.0" mnemonicParsing="false" onAction="#dS422ButtonPressed" prefWidth="70.0" text="4:2:2" />
+    <Button id="dS420Button" layoutX="88.0" layoutY="101.0" mnemonicParsing="false" onAction="#dS420ButtonPressed" prefWidth="70.0001220703125" text="4:2:0" />
+    <Button id="oS411Button" layoutX="252.0" layoutY="101.0" mnemonicParsing="false" onAction="#dS411ButtonPressed" prefWidth="70.0" text="4:1:1" />
+    <Button id="dS444Button" layoutX="10.0" layoutY="101.0" mnemonicParsing="false" onAction="#dS444ButtonPressed" prefWidth="70.0" text="4:4:4" />
+    <Button id="dS420Button" layoutX="10.0" layoutY="187.0" mnemonicParsing="false" onAction="#overSampleButtonPressed" prefWidth="312.0" text="OVERSAMPLE" />
+    <Button id="dS420Button" layoutX="10.0" layoutY="244.0" mnemonicParsing="false" onAction="#qualityButtonPressed" prefWidth="312.0" text="Quality" />
+    <Label fx:id="psnrLabel" layoutX="14.0" layoutY="279.0" prefHeight="21.0" prefWidth="206.0" text="PSNR:" />
+    <Label fx:id="mseLabel" layoutX="14.0" layoutY="301.0" prefHeight="21.0" prefWidth="206.0" text="MSE:" />
+    <Button layoutX="10.0" layoutY="130.0" mnemonicParsing="false" onAction="#dctTransform" prefWidth="149.0" text="DCT" />
+    <Button layoutX="10.0" layoutY="158.0" mnemonicParsing="false" onAction="#idctTransform" prefWidth="149.0" text="IDCT" />
+    <Button id="dS420Button" layoutX="10.0" layoutY="215.0" mnemonicParsing="false" onAction="#showResult" prefWidth="312.0" text="SHOW RESULT RGB" />
+    <Button layoutX="170.0" layoutY="130.0" mnemonicParsing="false" onAction="#whtTransform" prefWidth="149.0" text="WHT" />
+    <Button layoutX="168.0" layoutY="158.0" mnemonicParsing="false" onAction="#iWhtTransform" prefWidth="149.0" text="IWHT" />
+    <Slider fx:id="slider" layoutX="340.0" layoutY="125.0" orientation="VERTICAL" />
+  </children>
+</AnchorPane>
